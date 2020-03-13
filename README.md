@@ -6,7 +6,7 @@ RWU-Manager
 Simple crm dashboard app made with electron containing several views and a simple json file as database.
 As part of my studies, this application was created with Electron for the informatics project. The application should outline the electron specific concepts. There are 3 different views, but additional functionality has only been implemented for one view.
 
-<!-- ![Application-Dashboard]('./../assets/img/customer-manager.png') -->
+<!-- ![Application-Dashboard]('customer-manager.png') -->
 
 
 Repository structure
