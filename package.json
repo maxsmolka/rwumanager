@@ -1,0 +1,42 @@
+{
+  "name": "rwumanager",
+  "version": "1.0.0",
+  "description": "Simple crm dashboard app made with electron containing several views and a simple local json file as database",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "package": "npm-run-all package:*",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=out --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out ",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsmolka/rwumanager.git"
+  },
+  "keywords": [
+    "Electron",
+    "HTML",
+    "CSS",
+    "VanillaJS",
+    "RWU",
+    "CRM",
+    "Dashboard"
+  ],
+  "author": "Max Smolka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxsmolka/rwumanager/issues"
+  },
+  "homepage": "https://github.com/maxsmolka/rwumanager#readme",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^8.1.1",
+    "electron-packager": "^14.2.1"
+  },
+  "dependencies": {
+    "electron-settings": "^3.2.0",
+    "electron-store": "^5.1.1"
+  }
+}
