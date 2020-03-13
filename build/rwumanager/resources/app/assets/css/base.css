@@ -1,0 +1,82 @@
+:root {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --color-text-normal: rgba(51, 51, 51, 1);
+    --color-text-faded: rgba(51, 51, 51, .5);
+
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+
+    --bg-primary: #6638b6;
+    --bg-secondary: #5b369c;
+    --color-background: rgba(250, 250, 250, 1.0);
+
+    --primary: #6638b6;
+    --accent: #00a9ce;
+
+    --transition-speed: 600ms;
+
+}
+
+/* reset all values */
+* {
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: var(--color-text-normal);
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+h1+p {
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--color-text-normal);
+    text-decoration: none;
+    /* padding-bottom: .2rem;
+    border-bottom: .2rem solid var(--color-text-normal); */
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.def,
+h3+ul strong {
+    color: #569efe;
+}
