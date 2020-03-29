@@ -1,4 +1,4 @@
-RWU-Manager
+Simple CRM Electron App
 ======================
 
 > Max Smolka | March 13th, 2020
