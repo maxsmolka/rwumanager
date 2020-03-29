@@ -1,0 +1,69 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <link rel="import" href="sections/dashboard.html">
+    <link rel="import" href="sections/customers.html">
+    <link rel="import" href="sections/appointments.html">
+
+    <style>
+        @import url('./assets/css/base.css');
+        @import url('./assets/css/main.css');
+    </style>
+
+    <title>RWU Manager</title>
+</head>
+
+<body>
+    <div class="logo-topright__rwu">RWU.</div>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="dashboard" data-section="dashboard">
+                    <i class="fas fa-home" id="dashboard" data-section="dashboard"></i>
+                    <span class="link-text" id="dashboard" data-section="dashboard">dashboard.</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="customers" data-section="customers">
+                    <i class="fas fa-users" id="customers" data-section="customers"></i>
+                    <span class="link-text" id="customers" data-section="customers">customers.</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="appointments" data-section="appointments">
+                    <i class="fas fa-calendar-check" id="appointments" data-section="appointments"></i>
+                    <span class="link-text" id="appointments" data-section="appointments">appointments.</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link" id="user-add">
+                    <i class="fas fa-user-plus" id="user-add"></i>
+                    <span class="link-text" id="user-add">new.</span>
+                </a>
+            </li>
+            <li class="nav-item" id="exit">
+                <a href="javascript:window.close()" class="nav-link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="link-text">exit.</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content"></main>
+
+    <script>
+        require('./assets/imports.js')
+        require('./assets/navigation.js')
+        require('./renderer/render-customers.js')
+        require('./renderer/render-dashboard.js')
+        require('./renderer/render-appointments.js')
+    </script>
+</body>
+
+</html>

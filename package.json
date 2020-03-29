@@ -7,9 +7,9 @@
     "start": "electron .",
     "dev": "electron . --debug",
     "package": "npm-run-all package:*",
-    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=build --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
-    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=build ",
-    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=build"
+    "package:mac": "electron-packager . --overwrite --platform=darwin --out=build --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --out=build ",
+    "package:linux": "electron-packager . --overwrite --platform=linux --out=build"
   },
   "repository": {
     "type": "git",
