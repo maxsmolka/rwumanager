@@ -17,13 +17,13 @@ Repository structure
   - **css/**
     - **base.css** - General app color and style definitions
     - **main.css** - App specific style definitions for the content
-  - **db.js** - Local json file store, using npm package electro-store
+  - **db.js** - Local json file store, using npm package electron-store
   - **imports.js** - Attaches available sections as template-tags to the dom for later navigation
   - **navigation.js** - Routes configurator
 - **renderer/**
-  - **render-appointments.js** - Entry file for appointments.html logic
-  - **render-customers.js** - Entry file for customers.html logic
-  - **render-dashboard.js** - Entry file for dashboard.html logic
+  - **render-appointments.js** - Entry file for appointments.html
+  - **render-customers.js** - Entry file for customers.html
+  - **render-dashboard.js** - Entry file for dashboard.html
 - **sections/** - Different views
 - **index.js** - Entry file for the main process
 
